@@ -19,6 +19,7 @@ def animate(frame):
     ax.set_aspect('equal')
 
     # Calculate the x and y positions for each point
+    # These two equations are derived in the note
     x = np.cos(angles_rad) * np.cos(w * frame - angles_rad)
     y = np.sin(angles_rad) * np.cos(w * frame - angles_rad)
 
